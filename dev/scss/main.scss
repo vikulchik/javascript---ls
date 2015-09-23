@@ -1,0 +1,12 @@
+@import "mixins";
+
+
+@import "header";
+
+@import "footer";
+
+.wrapper {
+  font-family: "Arial", sans-serif;
+  background: url("../../image/wrapper-bg.png") no-repeat 0 0;
+  max-width: 1920px;
+}

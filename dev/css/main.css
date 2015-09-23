@@ -1,0 +1,19 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.hide {
+  display: none !important;
+}
+
+.wrapper {
+  font-family: "Arial", sans-serif;
+  background: url("../../image/wrapper-bg.png") no-repeat 0 0;
+  max-width: 1920px;
+}
+
+/*# sourceMappingURL=main.css.map */
