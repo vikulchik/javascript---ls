@@ -10,8 +10,6 @@
     display: block;
     width: 250px;
     height: 170px;
-    border-radius: 5px;
-    border: 1px solid #c0c0c0;
     float: left;
   }
   &_contacts {
@@ -21,37 +19,72 @@
     height: 113px;
     margin-top: 78px;
   }
+  &_mail, &_phone, &_skype {
+    &.link {
+      background-color: #f7f5f5;
+      background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+      color: #727070;
+      border: 1px solid #d4d3d2;
+      padding-left: 97px;
+    }
+  }
+
     &_item {
       list-style-type: none;
     }
+
     &_link {
       text-decoration: none;
+      border-radius: 2px;
       color: #727070;
       font-size: 20px;
       display: block;
-      height: 56px;
+      min-height: 56px;
       width: 250px;
       padding: 15px 0 20px 30px;
       box-sizing: border-box;
-      background-color: #f7f5f5;
-      background: linear-gradient(to bottom, #fbfafa, #e9e8e8);
-      &:hover {
-        background-color: #dcdada;
-        background: linear-gradient(to bottom, #dcdbdb, #bebdbd);
+
+      &.first {
+        background-color: #f7f5f5;
+        background: linear-gradient(to bottom, #a8a7a7, #7c7979);
+        color: #eeedec;
+        border: 1px solid #6d6d6d;
+        &:hover {
+          background-color: #669f88;
+          background: linear-gradient(to bottom, #78baa0, #4a7664);
+          color: #eeedec;
+          border: 1px solid #88d1b3;
+        }
+      }
+      &.second {
+        background-color: #f7f5f5;
+        background: linear-gradient(to bottom, #e3e2e2, #bebdbd);
+        color: #727070;
+        border: 1px solid #bebebe;
+        &:hover {
+          background-color: #78ba9f;
+          background: linear-gradient(to bottom, #90dabc, #669f87);
+          color: #467366;
+          border: 1px solid #88d1b3;
+        }
+      }
+
+      &.third {
+        background-color: #f7f5f5;
+        background: linear-gradient(to bottom, #f9f9fa, #e8e7e8);
+        color: #727070;
+        border: 1px solid #c0c0c0;
+        &:hover {
+          background-color: #8accae;
+          background: linear-gradient(to bottom, #a5e7cb, #74b797);
+          color: #467366;
+          border: 1px solid #88d1b3;
+        }
       }
     }
-    .active {
-     background-color: #5bcdb1;
-     border: none;
-     background: linear-gradient(to bottom, #a5efdd, #3fb79a);
-     border-top-right-radius: 5px;
-     border-top-left-radius: 5px;
-      }
     &_list {
       margin: 0;
       padding: 0;
-      border: 1px solid #c3c3c3;
-      border-radius: 5px;
     }
   &_info {
     display: block;
@@ -74,7 +107,7 @@
     width: 100%;
   }
   &_title {
-    height: 57px;
+    min-height: 57px;
     background-color: #8c8989;
     background: linear-gradient(to bottom, #a9a7a7, #7c7979);
     display: block;
