@@ -19,17 +19,89 @@
     height: 113px;
     margin-top: 78px;
   }
+
+  .main-p {
+    min-height: 43px;
+    width: 250px;
+    color: #d0982c;
+    font-size: 20px;
+    display: block;
+    background: #e8bf6e;
+    background: linear-gradient(to bottom, #f4cc7e, #deb461);
+    padding: 15px 0 20px 30px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #caa14e;
+    margin: 0;
+  }
+
   &_mail, &_phone, &_skype {
     &.link {
       background-color: #f7f5f5;
       background: linear-gradient(to bottom, #ffffff, #f5f5f5);
       color: #727070;
       border: 1px solid #d4d3d2;
-      padding-left: 97px;
+      font-size: 14px;
+      display: block;
+      min-height: 38px;
+      width: 250px;
+      text-decoration: none;
+      border-radius: 2px;
+      box-sizing: border-box;
+      padding:10px 10px 10px 97px;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url("../image/arrow.png") no-repeat 0 0;
+        width: 10px;
+        height: 38px;
+        top: 0;
+        left: 49px;
+      }
+      &:hover {
+        background: linear-gradient(to bottom, #ffffff, #f2e7d0);
+        text-decoration: underline;
+      }
     }
   }
 
-    &_item {
+  &_mail , &_phone, &_skype {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 19px;
+    }
+  }
+  &_mail {
+    &:before {
+      background: url("../image/ico/ico-mail.png") no-repeat 0 0;
+      width: 14px;
+      height: 10px;
+      top: 13px;
+    }
+  }
+  &_phone {
+    &:before {
+      background: url("../image/ico/ico-phone.png") no-repeat 0 0;
+      width: 14px;
+      height: 19px;
+      top: 9px;
+    }
+  }
+  &_skype {
+    &:before {
+      background: url("../image/ico/ico-skype.png") no-repeat 0 0;
+      width: 19px;
+      height: 19px;
+      top: 9px;
+    }
+  }
+
+    &_item, .contacts_li  {
       list-style-type: none;
     }
 
@@ -86,6 +158,9 @@
       margin: 0;
       padding: 0;
     }
+  .about-me {
+    padding: 37px;
+  }
   &_info {
     display: block;
     min-height: 285px;
@@ -101,6 +176,8 @@
     height: 142px;
     border-radius: 50% 50%;
     overflow: hidden;
+    float: left;
+    margin-right: 37px;
     border: 10px solid #f0efee;
   }
   .my-photo {
@@ -130,6 +207,66 @@
           font-size: 14px;
         }
       }
+    }
+  }
+  .information-text_p, .education_p {
+    position: relative;
+    color: #727070;
+    font-size: 14px;
+    margin-left: 95px;
+    margin-bottom: 60px;
+    line-height: 1.5;
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      background: url("../image/ico/ico-bag.png") no-repeat 0 0;
+      width: 53px;
+      height: 55px;
+      top: -5px;
+      left: -91px;
+    }
+    &.line {
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        background: url("../image/line.png") no-repeat 0 0;
+        width: 560px;
+        height: 2px;
+        top: 73px;
+        left: -91px;
+      }
+    }
+  }
+  .information-text_p:last-child, .education_p:last-child {
+    margin-bottom: 0;
+  }
+  .first-img, .second-img, .third-img {
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 53px;
+      height: 55px;
+      left: -94px;
+      top: -6px;
+    }
+  }
+  .first-img {
+    &:after {
+      background: url("../image/ico/ico-school.png") no-repeat 0 0;
+    }
+  }
+  .second-img {
+    &:after {
+      background: url("../image/ico/ico-graduate.png") no-repeat 0 0;
+    }
+  }
+  .third-img {
+    &:after {
+      background: url("../image/ico/ico-file.png") no-repeat 0 0;
     }
   }
 }

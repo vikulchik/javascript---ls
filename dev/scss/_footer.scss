@@ -1,4 +1,31 @@
 .footer {
   background-color: #fdfdfd;
   min-height: 61px;
+  padding: 27px 0 27px 0;
+  box-sizing: border-box;
+  &_button, &_copyright {
+    margin: 0;
+  }
+  &_copyright {
+    text-align: center;
+    color: #727070;
+    font-size: 12px;
+  }
+  &_button {
+    position: relative;
+    color: #9c9c9c;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    &:after {
+      display: block;
+      content: '';
+      background: url("../image/locked.png") no-repeat 0 0;
+      width: 16px;
+      height: 19px;
+      top: 0;
+      left: 0;
+    }
+  }
 }
