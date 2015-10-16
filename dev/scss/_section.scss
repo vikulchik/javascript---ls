@@ -50,6 +50,9 @@
       box-sizing: border-box;
       padding:10px 10px 10px 97px;
       position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
       &:after {
         content: '';
         display: block;
@@ -177,7 +180,6 @@
     border-radius: 50% 50%;
     overflow: hidden;
     float: left;
-    margin-right: 37px;
     border: 10px solid #f0efee;
   }
   .my-photo {
@@ -192,7 +194,7 @@
     color: #eeedec;
     font-size: 24px;
     font-weight: normal;
-    padding: 12px 0 0 40px;
+    padding: 12px 5px 12px 40px;
     border: 1px solid #636363;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -200,11 +202,39 @@
   }
   &_info {
     .content {
+      float: right;
       &_about {
         color: #727070;
         font-size: 16px;
         span {
           font-size: 14px;
+        }
+      }
+      &_item {
+        list-style-type: none;
+        color: #1e7465;
+        font-size: 9px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        max-width: 48px;
+        background-color: #faf8f8;
+        background: linear-gradient(to bottom, #f9fafa, #e0e0e0);
+        border: 1px solid #d7d7d7;
+        margin-bottom: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 3px 0 3px 0;
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          background: url("../image/ico/img-block.png") no-repeat 0 0;
+          top: -2px;
+          left: -12px;
+          width: 12px;
+          height: 20px;
         }
       }
     }
@@ -220,11 +250,14 @@
       position: absolute;
       display: block;
       content: '';
-      background: url("../image/ico/ico-bag.png") no-repeat 0 0;
+      background: url("../image/ico/ico-bag.png") no-repeat center center;
       width: 53px;
       height: 55px;
       top: -5px;
       left: -91px;
+      background-color: #f7f7f7;
+      box-shadow: -2px -2px 1px;
+      border-radius: 50% 50%;
     }
     &.line {
       &:before {
@@ -252,21 +285,31 @@
       height: 55px;
       left: -94px;
       top: -6px;
+
     }
   }
   .first-img {
     &:after {
-      background: url("../image/ico/ico-school.png") no-repeat 0 0;
+      background: url("../image/ico/ico-school.png") no-repeat center center;
+      background-color: #f7f7f7;
+      box-shadow: -2px -2px 1px;
+      border-radius: 50% 50%;
     }
   }
   .second-img {
     &:after {
-      background: url("../image/ico/ico-graduate.png") no-repeat 0 0;
+      background: url("../image/ico/ico-graduate.png") no-repeat center center;
+      background-color: #f7f7f7;
+      box-shadow: -2px -2px 1px;
+      border-radius: 50% 50%;
     }
   }
   .third-img {
     &:after {
-      background: url("../image/ico/ico-file.png") no-repeat 0 0;
+      background: url("../image/ico/ico-file.png") no-repeat center center;
+      background-color: #f7f7f7;
+      box-shadow: -2px -2px 1px;
+      border-radius: 50% 50%;
     }
   }
 }
