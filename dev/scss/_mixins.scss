@@ -48,3 +48,7 @@
 .hide {
   display: none!important; // for js
 }
+
+@mixin font-family {
+  font-family: "OpenSans-Regular";
+}

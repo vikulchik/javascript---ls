@@ -10,3 +10,51 @@
   font-family: "Arial", sans-serif;
   max-width: 1920px;
 }
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(../fonts/opensans-bold-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: url(../fonts/opensans-bolditalic-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url(../fonts/opensans-extrabold-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-ExtraBoldItalic";
+  src: url(../fonts/opensans-extrabolditalic-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-talic";
+  src: url(../fonts/opensans-italic-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url(../fonts/opensans-light-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url(../fonts/opensans-lightitalic-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../fonts/opensans-regular-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url(../fonts/opensans-semibold-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-SemiboldItalic";
+  src: url(../fonts/opensans-semibolditalic-webfont.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+
+

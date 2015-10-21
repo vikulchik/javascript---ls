@@ -2,6 +2,7 @@
   background-color: #fdfdfd;
   min-height: 61px;
   padding: 27px 0 27px 0;
+  margin-bottom: 0;
   box-sizing: border-box;
   &_button, &_copyright {
     margin: 0;
@@ -10,14 +11,15 @@
     text-align: center;
     color: #727070;
     font-size: 12px;
+    font-family: OpenSans-Light;
   }
   &_button {
     position: relative;
     color: #9c9c9c;
     font-size: 14px;
-    font-weight: bold;
     text-decoration: none;
     display: block;
+    font-family: OpenSans-Bold;
     &:after {
       display: block;
       content: '';
@@ -25,6 +27,7 @@
       width: 16px;
       height: 19px;
       top: 0;
+      position: absolute;
       left: 0;
     }
   }

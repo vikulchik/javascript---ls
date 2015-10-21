@@ -120,22 +120,17 @@
       box-sizing: border-box;
 
       &.first {
-        background-color: #f7f5f5;
-        background: linear-gradient(to bottom, #a8a7a7, #7c7979);
+        background-color: #669f88;
+        background: linear-gradient(to bottom, #78baa0, #4a7664);
         color: #eeedec;
-        border: 1px solid #6d6d6d;
-        &:hover {
-          background-color: #669f88;
-          background: linear-gradient(to bottom, #78baa0, #4a7664);
-          color: #eeedec;
-          border: 1px solid #88d1b3;
-        }
+        border: 1px solid #88d1b3;
       }
-      &.second {
+
+      &.second, &.third {
         background-color: #f7f5f5;
-        background: linear-gradient(to bottom, #e3e2e2, #bebdbd);
+        background: linear-gradient(to bottom, #f9f9fa, #e8e7e8);
         color: #727070;
-        border: 1px solid #bebebe;
+        border: 1px solid #c0c0c0;
         &:hover {
           background-color: #78ba9f;
           background: linear-gradient(to bottom, #90dabc, #669f87);
@@ -145,10 +140,6 @@
       }
 
       &.third {
-        background-color: #f7f5f5;
-        background: linear-gradient(to bottom, #f9f9fa, #e8e7e8);
-        color: #727070;
-        border: 1px solid #c0c0c0;
         &:hover {
           background-color: #8accae;
           background: linear-gradient(to bottom, #a5e7cb, #74b797);
@@ -203,40 +194,44 @@
   &_info {
     .content {
       float: right;
+      width: 384px;
       &_about {
         color: #727070;
         font-size: 16px;
-        span {
-          font-size: 14px;
-        }
+        font-family: OpenSans-Semibold;
       }
       &_item {
         list-style-type: none;
+        font-family: OpenSans-Semibold;
         color: #1e7465;
         font-size: 9px;
-        font-weight: bold;
         text-transform: uppercase;
-        display: block;
-        max-width: 48px;
+        display: inline-block;
         background-color: #faf8f8;
         background: linear-gradient(to bottom, #f9fafa, #e0e0e0);
         border: 1px solid #d7d7d7;
         margin-bottom: 10px;
         text-align: center;
         box-sizing: border-box;
-        padding: 3px 0 3px 0;
+        padding: 2px 7px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        margin-left: 10px;
         position: relative;
         &:after {
+          position: absolute;
           content: '';
           display: block;
-          position: absolute;
           background: url("../image/ico/img-block.png") no-repeat 0 0;
-          top: -2px;
-          left: -12px;
           width: 12px;
           height: 20px;
+          top: -2px;
+          left: -11px;
         }
       }
+    }
+    .content_list {
+      padding: 0;
     }
   }
   .information-text_p, .education_p {
@@ -246,6 +241,7 @@
     margin-left: 95px;
     margin-bottom: 60px;
     line-height: 1.5;
+    @include font-family;
     &:after {
       position: absolute;
       display: block;
@@ -311,5 +307,9 @@
       box-shadow: -2px -2px 1px;
       border-radius: 50% 50%;
     }
+  }
+  &_link, &_title, &-p, .about-span, .information-text_p, .link {
+
+    @include font-family;
   }
 }

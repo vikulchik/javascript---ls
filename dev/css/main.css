@@ -177,34 +177,22 @@
   box-sizing: border-box;
 }
 .main_link.first {
-  background-color: #f7f5f5;
-  background: linear-gradient(to bottom, #a8a7a7, #7c7979);
-  color: #eeedec;
-  border: 1px solid #6d6d6d;
-}
-.main_link.first:hover {
   background-color: #669f88;
   background: linear-gradient(to bottom, #78baa0, #4a7664);
   color: #eeedec;
   border: 1px solid #88d1b3;
 }
-.main_link.second {
-  background-color: #f7f5f5;
-  background: linear-gradient(to bottom, #e3e2e2, #bebdbd);
-  color: #727070;
-  border: 1px solid #bebebe;
-}
-.main_link.second:hover {
-  background-color: #78ba9f;
-  background: linear-gradient(to bottom, #90dabc, #669f87);
-  color: #467366;
-  border: 1px solid #88d1b3;
-}
-.main_link.third {
+.main_link.second, .main_link.third {
   background-color: #f7f5f5;
   background: linear-gradient(to bottom, #f9f9fa, #e8e7e8);
   color: #727070;
   border: 1px solid #c0c0c0;
+}
+.main_link.second:hover, .main_link.third:hover {
+  background-color: #78ba9f;
+  background: linear-gradient(to bottom, #90dabc, #669f87);
+  color: #467366;
+  border: 1px solid #88d1b3;
 }
 .main_link.third:hover {
   background-color: #8accae;
@@ -257,40 +245,44 @@
 }
 .main_info .content {
   float: right;
+  width: 384px;
 }
 .main_info .content_about {
   color: #727070;
   font-size: 16px;
-}
-.main_info .content_about span {
-  font-size: 14px;
+  font-family: OpenSans-Semibold;
 }
 .main_info .content_item {
   list-style-type: none;
+  font-family: OpenSans-Semibold;
   color: #1e7465;
   font-size: 9px;
-  font-weight: bold;
   text-transform: uppercase;
-  display: block;
-  max-width: 48px;
+  display: inline-block;
   background-color: #faf8f8;
   background: linear-gradient(to bottom, #f9fafa, #e0e0e0);
   border: 1px solid #d7d7d7;
   margin-bottom: 10px;
   text-align: center;
   box-sizing: border-box;
-  padding: 3px 0 3px 0;
+  padding: 2px 7px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-left: 10px;
   position: relative;
 }
 .main_info .content_item:after {
+  position: absolute;
   content: '';
   display: block;
-  position: absolute;
   background: url("../image/ico/img-block.png") no-repeat 0 0;
-  top: -2px;
-  left: -12px;
   width: 12px;
   height: 20px;
+  top: -2px;
+  left: -11px;
+}
+.main_info .content_list {
+  padding: 0;
 }
 .main .information-text_p, .main .education_p {
   position: relative;
@@ -299,6 +291,7 @@
   margin-left: 95px;
   margin-bottom: 60px;
   line-height: 1.5;
+  font-family: "OpenSans-Regular";
 }
 .main .information-text_p:after, .main .education_p:after {
   position: absolute;
@@ -356,11 +349,15 @@
   box-shadow: -2px -2px 1px;
   border-radius: 50% 50%;
 }
+.main_link, .main_title, .main-p, .main .about-span, .main .information-text_p, .main .link {
+  font-family: "OpenSans-Regular";
+}
 
 .footer {
   background-color: #fdfdfd;
   min-height: 61px;
   padding: 27px 0 27px 0;
+  margin-bottom: 0;
   box-sizing: border-box;
 }
 .footer_button, .footer_copyright {
@@ -370,14 +367,15 @@
   text-align: center;
   color: #727070;
   font-size: 12px;
+  font-family: OpenSans-Light;
 }
 .footer_button {
   position: relative;
   color: #9c9c9c;
   font-size: 14px;
-  font-weight: bold;
   text-decoration: none;
   display: block;
+  font-family: OpenSans-Bold;
 }
 .footer_button:after {
   display: block;
@@ -386,12 +384,57 @@
   width: 16px;
   height: 19px;
   top: 0;
+  position: absolute;
   left: 0;
 }
 
 .wrapper {
   font-family: "Arial", sans-serif;
   max-width: 1920px;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(../fonts/opensans-bold-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: url(../fonts/opensans-bolditalic-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url(../fonts/opensans-extrabold-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-ExtraBoldItalic";
+  src: url(../fonts/opensans-extrabolditalic-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-talic";
+  src: url(../fonts/opensans-italic-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url(../fonts/opensans-light-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url(../fonts/opensans-lightitalic-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../fonts/opensans-regular-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url(../fonts/opensans-semibold-webfont.ttf);
+}
+@font-face {
+  font-family: "OpenSans-SemiboldItalic";
+  src: url(../fonts/opensans-semibolditalic-webfont.ttf);
+}
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
