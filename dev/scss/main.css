@@ -1,0 +1,366 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.hide {
+  display: none !important; }
+
+.header {
+  background: url("../image/bg-head.jpg") repeat-x 0 0;
+  border-bottom: 10px solid #ffffff;
+  min-height: 90px; }
+  .header_logo {
+    float: left;
+    margin-left: 108px;
+    display: block;
+    margin-top: 10px; }
+  .header_nav {
+    float: right;
+    display: inline-block;
+    width: 220px;
+    height: 40px;
+    margin-right: 108px;
+    margin-top: 27px; }
+  .header_link {
+    text-indent: -9999px;
+    display: block;
+    width: 38px;
+    height: 40px; }
+  .header .facebook {
+    background: url("../image/ico/ico-facebook.png") no-repeat 0 0; }
+    .header .facebook:hover {
+      background: url("../image/ico/ico-facebook-active.png") no-repeat 0 0; }
+  .header .vk {
+    background: url("../image/ico/ico-vk.png") no-repeat 0 0; }
+    .header .vk:hover {
+      background: url("../image/ico/ico-vk-active.png") no-repeat 0 0; }
+  .header .twitter {
+    background: url("../image/ico/ico-twitter.png") no-repeat 0 0; }
+    .header .twitter:hover {
+      background: url("../image/ico/ico-twitter-active.png") no-repeat 0 0; }
+  .header .github {
+    background: url("../image/ico/ico-girhub.png") no-repeat 0 0; }
+    .header .github:hover {
+      background: url("../image/ico/ico-github-active.png") no-repeat 0 0; }
+  .header_list {
+    display: inline-block;
+    margin-left: 15px; }
+    .header_list:first-child {
+      margin-left: 0; }
+
+.main {
+  background: url("../image/wrapper-bg.png") no-repeat 0 0;
+  background-size: cover;
+  padding-top: 33px; }
+  .main_information {
+    max-width: 970px;
+    margin: auto; }
+  .main_navigation {
+    display: block;
+    width: 250px;
+    height: 170px;
+    float: left; }
+  .main_contacts {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 113px;
+    margin-top: 78px; }
+  .main .main-p {
+    min-height: 43px;
+    width: 250px;
+    color: #d0982c;
+    font-size: 20px;
+    display: block;
+    background: #e8bf6e;
+    background: linear-gradient(to bottom, #f4cc7e, #deb461);
+    padding: 15px 0 20px 30px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #caa14e;
+    margin: 0; }
+  .main_mail.link, .main_phone.link, .main_skype.link {
+    background-color: #f7f5f5;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+    color: #727070;
+    border: 1px solid #d4d3d2;
+    font-size: 14px;
+    display: block;
+    min-height: 38px;
+    width: 250px;
+    text-decoration: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 97px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .main_mail.link:after, .main_phone.link:after, .main_skype.link:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url("../image/arrow.png") no-repeat 0 0;
+      width: 10px;
+      height: 38px;
+      top: 0;
+      left: 49px; }
+    .main_mail.link:hover, .main_phone.link:hover, .main_skype.link:hover {
+      background: linear-gradient(to bottom, #ffffff, #f2e7d0);
+      text-decoration: underline; }
+  .main_mail, .main_phone, .main_skype {
+    position: relative; }
+    .main_mail:before, .main_phone:before, .main_skype:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 19px; }
+  .main_mail:before {
+    background: url("../image/ico/ico-mail.png") no-repeat 0 0;
+    width: 14px;
+    height: 10px;
+    top: 13px; }
+  .main_phone:before {
+    background: url("../image/ico/ico-phone.png") no-repeat 0 0;
+    width: 14px;
+    height: 19px;
+    top: 9px; }
+  .main_skype:before {
+    background: url("../image/ico/ico-skype.png") no-repeat 0 0;
+    width: 19px;
+    height: 19px;
+    top: 9px; }
+  .main_item, .main .contacts_li {
+    list-style-type: none; }
+  .main_link {
+    text-decoration: none;
+    border-radius: 2px;
+    color: #727070;
+    font-size: 20px;
+    display: block;
+    min-height: 56px;
+    width: 250px;
+    padding: 15px 0 20px 30px;
+    box-sizing: border-box; }
+    .main_link.first {
+      background-color: #669f88;
+      background: linear-gradient(to bottom, #78baa0, #4a7664);
+      color: #eeedec;
+      border: 1px solid #88d1b3; }
+    .main_link.second, .main_link.third {
+      background-color: #f7f5f5;
+      background: linear-gradient(to bottom, #f9f9fa, #e8e7e8);
+      color: #727070;
+      border: 1px solid #c0c0c0; }
+      .main_link.second:hover, .main_link.third:hover {
+        background-color: #78ba9f;
+        background: linear-gradient(to bottom, #90dabc, #669f87);
+        color: #467366;
+        border: 1px solid #88d1b3; }
+    .main_link.third:hover {
+      background-color: #8accae;
+      background: linear-gradient(to bottom, #a5e7cb, #74b797);
+      color: #467366;
+      border: 1px solid #88d1b3; }
+  .main_list {
+    margin: 0;
+    padding: 0; }
+  .main .about-me {
+    padding: 37px; }
+  .main_info {
+    display: block;
+    min-height: 285px;
+    width: 650px;
+    border-radius: 5px;
+    border: 1px solid #c5c5c5;
+    background-color: #f6f5f5;
+    float: right;
+    margin-bottom: 35px; }
+  .main .avatar {
+    width: 142px;
+    height: 142px;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    float: left;
+    border: 10px solid #f0efee; }
+  .main .my-photo {
+    width: 100%; }
+  .main_title {
+    min-height: 57px;
+    background-color: #8c8989;
+    background: linear-gradient(to bottom, #a9a7a7, #7c7979);
+    display: block;
+    margin: 0;
+    color: #eeedec;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 12px 5px 12px 40px;
+    border: 1px solid #636363;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box; }
+  .main_info .content {
+    float: right;
+    width: 384px; }
+    .main_info .content_about {
+      color: #727070;
+      font-size: 16px;
+      font-family: OpenSans-Semibold; }
+    .main_info .content_item {
+      list-style-type: none;
+      font-family: OpenSans-Semibold;
+      color: #1e7465;
+      font-size: 9px;
+      text-transform: uppercase;
+      display: inline-block;
+      background-color: #faf8f8;
+      background: linear-gradient(to bottom, #f9fafa, #e0e0e0);
+      border: 1px solid #d7d7d7;
+      margin-bottom: 10px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 2px 7px;
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+      margin-left: 10px;
+      position: relative; }
+      .main_info .content_item:after {
+        position: absolute;
+        content: '';
+        display: block;
+        background: url("../image/ico/img-block.png") no-repeat 0 0;
+        width: 12px;
+        height: 20px;
+        top: -2px;
+        left: -11px; }
+  .main_info .content_list {
+    padding: 0; }
+  .main .information-text_p, .main .education_p {
+    position: relative;
+    color: #727070;
+    font-size: 14px;
+    margin-left: 95px;
+    margin-bottom: 60px;
+    line-height: 1.5;
+    font-family: "OpenSans-Regular"; }
+    .main .information-text_p:after, .main .education_p:after {
+      position: absolute;
+      display: block;
+      content: '';
+      background: url("../image/ico/ico-bag.png") no-repeat center center;
+      width: 53px;
+      height: 55px;
+      top: -5px;
+      left: -91px;
+      background-color: #f7f7f7;
+      box-shadow: -2px -2px 1px;
+      border-radius: 50% 50%; }
+    .main .information-text_p.line:before, .main .education_p.line:before {
+      position: absolute;
+      content: '';
+      display: block;
+      background: url("../image/line.png") no-repeat 0 0;
+      width: 560px;
+      height: 2px;
+      top: 73px;
+      left: -91px; }
+  .main .information-text_p:last-child, .main .education_p:last-child {
+    margin-bottom: 0; }
+  .main .first-img, .main .second-img, .main .third-img {
+    position: relative; }
+    .main .first-img:after, .main .second-img:after, .main .third-img:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 53px;
+      height: 55px;
+      left: -94px;
+      top: -6px; }
+  .main .first-img:after {
+    background: url("../image/ico/ico-school.png") no-repeat center center;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px;
+    border-radius: 50% 50%; }
+  .main .second-img:after {
+    background: url("../image/ico/ico-graduate.png") no-repeat center center;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px;
+    border-radius: 50% 50%; }
+  .main .third-img:after {
+    background: url("../image/ico/ico-file.png") no-repeat center center;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px;
+    border-radius: 50% 50%; }
+  .main_link, .main_title, .main-p, .main .about-span, .main .information-text_p, .main .link {
+    font-family: "OpenSans-Regular"; }
+
+.footer {
+  background-color: #fdfdfd;
+  min-height: 61px;
+  padding: 27px 0 27px 0;
+  margin-bottom: 0;
+  box-sizing: border-box; }
+  .footer_button, .footer_copyright {
+    margin: 0; }
+  .footer_copyright {
+    text-align: center;
+    color: #727070;
+    font-size: 12px;
+    font-family: OpenSans-Light; }
+  .footer_button {
+    position: relative;
+    color: #9c9c9c;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    font-family: OpenSans-Bold; }
+    .footer_button:after {
+      display: block;
+      content: '';
+      background: url("../image/locked.png") no-repeat 0 0;
+      width: 16px;
+      height: 19px;
+      top: 0;
+      position: absolute;
+      left: 0; }
+
+.wrapper {
+  font-family: "Arial", sans-serif;
+  max-width: 1920px; }
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(../fonts/opensans-bold-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: url(../fonts/opensans-bolditalic-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url(../fonts/opensans-extrabold-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-ExtraBoldItalic";
+  src: url(../fonts/opensans-extrabolditalic-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-talic";
+  src: url(../fonts/opensans-italic-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url(../fonts/opensans-light-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url(../fonts/opensans-lightitalic-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../fonts/opensans-regular-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url(../fonts/opensans-semibold-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-SemiboldItalic";
+  src: url(../fonts/opensans-semibolditalic-webfont.ttf); }
+body {
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */
