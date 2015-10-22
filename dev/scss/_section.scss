@@ -122,8 +122,8 @@
 
       &.first {
         background-color: #669f88;
-        background: linear-gradient(to bottom, #78baa0, #4a7664);
-        color: #eeedec;
+        background: linear-gradient(to bottom, #7de8cd, #3fb79a);
+        color: #1e7465 ;
         border: 1px solid #88d1b3;
       }
 
@@ -200,6 +200,8 @@
         color: #727070;
         font-size: 16px;
         font-family: OpenSans-Semibold;
+        float: left;
+        margin-right: 10px;
       }
       &_item {
         list-style-type: none;
@@ -233,6 +235,8 @@
     }
     .content_list {
       padding: 0;
+      margin: 0;
+      line-height: 1.5;
     }
   }
   .information-text_p, .education_p {
@@ -264,7 +268,7 @@
         background: url("../image/line.png") no-repeat 0 0;
         width: 560px;
         height: 2px;
-        top: 73px;
+        bottom: -34px;
         left: -91px;
       }
     }
@@ -309,6 +313,10 @@
       border-radius: 50% 50%;
     }
   }
+  .about-span {
+    margin: 0;
+  }
+
   &_link, &_title, &-p, .about-span, .information-text_p, .link {
 
     @include font-family;

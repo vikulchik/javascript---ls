@@ -147,8 +147,8 @@
     box-sizing: border-box; }
     .main_link.first {
       background-color: #669f88;
-      background: linear-gradient(to bottom, #78baa0, #4a7664);
-      color: #eeedec;
+      background: linear-gradient(to bottom, #7de8cd, #3fb79a);
+      color: #1e7465;
       border: 1px solid #88d1b3; }
     .main_link.second, .main_link.third {
       background-color: #f7f5f5;
@@ -208,7 +208,9 @@
     .main_info .content_about {
       color: #727070;
       font-size: 16px;
-      font-family: OpenSans-Semibold; }
+      font-family: OpenSans-Semibold;
+      float: left;
+      margin-right: 10px; }
     .main_info .content_item {
       list-style-type: none;
       font-family: OpenSans-Semibold;
@@ -237,7 +239,9 @@
         top: -2px;
         left: -11px; }
   .main_info .content_list {
-    padding: 0; }
+    padding: 0;
+    margin: 0;
+    line-height: 1.5; }
   .main .information-text_p, .main .education_p {
     position: relative;
     color: #727070;
@@ -265,7 +269,7 @@
       background: url("../image/line.png") no-repeat 0 0;
       width: 560px;
       height: 2px;
-      top: 73px;
+      bottom: -34px;
       left: -91px; }
   .main .information-text_p:last-child, .main .education_p:last-child {
     margin-bottom: 0; }
@@ -294,6 +298,8 @@
     background-color: #f7f7f7;
     box-shadow: -2px -2px 1px;
     border-radius: 50% 50%; }
+  .main .about-span {
+    margin: 0; }
   .main_link, .main_title, .main-p, .main .about-span, .main .information-text_p, .main .link {
     font-family: "OpenSans-Regular"; }
 
