@@ -156,8 +156,8 @@
       color: #727070;
       border: 1px solid #c0c0c0; }
       .main_link.second:hover, .main_link.third:hover {
-        background-color: #78ba9f;
-        background: linear-gradient(to bottom, #90dabc, #669f87);
+        background-color: #669f88;
+        background: linear-gradient(to bottom, #7de8cd, #3fb79a);
         color: #467366;
         border: 1px solid #88d1b3; }
     .main_link.third:hover {
