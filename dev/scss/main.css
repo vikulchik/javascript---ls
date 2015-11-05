@@ -11,9 +11,13 @@
   background: url("../image/bg-head.jpg") repeat-x 0 0;
   border-bottom: 10px solid #ffffff;
   min-height: 90px; }
+  .header-content {
+    display: block;
+    width: 85%;
+    height: 79px;
+    margin: auto; }
   .header_logo {
     float: left;
-    margin-left: 108px;
     display: block;
     margin-top: 10px; }
   .header_nav {
@@ -21,34 +25,42 @@
     display: inline-block;
     width: 220px;
     height: 40px;
-    margin-right: 108px;
-    margin-top: 27px; }
-  .header_link {
-    text-indent: -9999px;
-    display: block;
-    width: 38px;
-    height: 40px; }
-  .header .facebook {
-    background: url("../image/ico/ico-facebook.png") no-repeat 0 0; }
-    .header .facebook:hover {
-      background: url("../image/ico/ico-facebook-active.png") no-repeat 0 0; }
-  .header .vk {
-    background: url("../image/ico/ico-vk.png") no-repeat 0 0; }
-    .header .vk:hover {
-      background: url("../image/ico/ico-vk-active.png") no-repeat 0 0; }
-  .header .twitter {
-    background: url("../image/ico/ico-twitter.png") no-repeat 0 0; }
-    .header .twitter:hover {
-      background: url("../image/ico/ico-twitter-active.png") no-repeat 0 0; }
-  .header .github {
-    background: url("../image/ico/ico-girhub.png") no-repeat 0 0; }
-    .header .github:hover {
-      background: url("../image/ico/ico-github-active.png") no-repeat 0 0; }
-  .header_list {
-    display: inline-block;
-    margin-left: 15px; }
-    .header_list:first-child {
-      margin-left: 0; }
+    margin-top: 26px; }
+
+.header_logo-link {
+  display: block; }
+
+.social_link {
+  text-indent: -9999px;
+  display: block;
+  width: 38px;
+  height: 40px; }
+
+.facebook {
+  background: url("../image/ico/ico-facebook.png") no-repeat 0 0; }
+  .facebook:hover {
+    background: url("../image/ico/ico-facebook-active.png") no-repeat 0 0; }
+
+.vk {
+  background: url("../image/ico/ico-vk.png") no-repeat 0 0; }
+  .vk:hover {
+    background: url("../image/ico/ico-vk-active.png") no-repeat 0 0; }
+
+.twitter {
+  background: url("../image/ico/ico-twitter.png") no-repeat 0 0; }
+  .twitter:hover {
+    background: url("../image/ico/ico-twitter-active.png") no-repeat 0 0; }
+
+.github {
+  background: url("../image/ico/ico-girhub.png") no-repeat 0 0; }
+  .github:hover {
+    background: url("../image/ico/ico-github-active.png") no-repeat 0 0; }
+
+.social_list {
+  display: inline-block;
+  margin-left: 15px; }
+  .social_list:first-child {
+    margin-left: 0; }
 
 .main {
   background: url("../image/wrapper-bg.png") no-repeat 0 0;
@@ -61,14 +73,11 @@
   .main_navigation {
     display: block;
     width: 250px;
-    height: 170px;
     float: left; }
   .main_contacts {
     display: block;
     float: left;
-    width: 250px;
-    height: 113px;
-    margin-top: 78px; }
+    width: 250px; }
   .main .main-p {
     min-height: 43px;
     width: 250px;
@@ -77,7 +86,7 @@
     display: block;
     background: #e8bf6e;
     background: linear-gradient(to bottom, #f4cc7e, #deb461);
-    padding: 15px 0 20px 30px;
+    padding: 8px  28px;
     box-sizing: border-box;
     border-radius: 2px;
     border: 1px solid #caa14e;
@@ -89,12 +98,12 @@
     border: 1px solid #d4d3d2;
     font-size: 14px;
     display: block;
-    min-height: 38px;
+    min-height: 35px;
     width: 250px;
     text-decoration: none;
     border-radius: 2px;
     box-sizing: border-box;
-    padding: 10px 10px 10px 97px;
+    padding: 6px 10px  9px 96px;
     position: relative;
     white-space: nowrap;
     overflow: hidden;
@@ -143,7 +152,7 @@
     display: block;
     min-height: 56px;
     width: 250px;
-    padding: 15px 0 20px 30px;
+    padding: 13px  29px  14px  29px;
     box-sizing: border-box; }
     .main_link.first {
       background-color: #669f88;
@@ -167,9 +176,12 @@
       border: 1px solid #88d1b3; }
   .main_list {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 35px; }
   .main .about-me {
-    padding: 37px; }
+    padding: 6px  6px  6px  48px; }
+  .main .second-info {
+    padding: 22px 41px 22px  41px; }
   .main_info {
     display: block;
     min-height: 285px;
@@ -185,7 +197,8 @@
     border-radius: 50% 50%;
     overflow: hidden;
     float: left;
-    border: 10px solid #f0efee; }
+    border: 10px solid #f0efee;
+    margin-top: 18px; }
   .main .my-photo {
     width: 100%; }
   .main_title {
@@ -197,7 +210,7 @@
     color: #eeedec;
     font-size: 24px;
     font-weight: normal;
-    padding: 12px 5px 12px 40px;
+    padding: 9px 43px;
     border: 1px solid #636363;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -245,9 +258,9 @@
   .main .information-text_p, .main .education_p {
     position: relative;
     color: #727070;
+    margin: 0;
+    padding: 33px  30px  35px  105px;
     font-size: 14px;
-    margin-left: 95px;
-    margin-bottom: 60px;
     line-height: 1.5;
     font-family: "OpenSans-Regular"; }
     .main .information-text_p:after, .main .education_p:after {
@@ -257,20 +270,13 @@
       background: url("../image/ico/ico-bag.png") no-repeat center center;
       width: 53px;
       height: 55px;
-      top: -5px;
-      left: -91px;
+      top: 28%;
+      left: 3%;
       background-color: #f7f7f7;
       box-shadow: -2px -2px 1px;
       border-radius: 50% 50%; }
-    .main .information-text_p.line:before, .main .education_p.line:before {
-      position: absolute;
-      content: '';
-      display: block;
-      background: url("../image/line.png") no-repeat 0 0;
-      width: 560px;
-      height: 2px;
-      bottom: -34px;
-      left: -91px; }
+    .main .information-text_p.line, .main .education_p.line {
+      border-bottom: 2px solid #dbdbda; }
   .main .information-text_p:last-child, .main .education_p:last-child {
     margin-bottom: 0; }
   .main .first-img, .main .second-img, .main .third-img {
@@ -281,8 +287,8 @@
       position: absolute;
       width: 53px;
       height: 55px;
-      left: -94px;
-      top: -6px; }
+      left: 3%;
+      top: 28%; }
   .main .first-img:after {
     background: url("../image/ico/ico-school.png") no-repeat center center;
     background-color: #f7f7f7;
@@ -302,6 +308,12 @@
     margin: 0; }
   .main_link, .main_title, .main-p, .main .about-span, .main .information-text_p, .main .link {
     font-family: "OpenSans-Regular"; }
+
+.about-span {
+  float: left; }
+
+.about-span:nth-child(3n) {
+  clear: both; }
 
 .footer {
   background-color: #fdfdfd;

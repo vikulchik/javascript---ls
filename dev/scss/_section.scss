@@ -10,15 +10,12 @@
   &_navigation {
     display: block;
     width: 250px;
-    height: 170px;
     float: left;
   }
   &_contacts {
     display: block;
     float: left;
     width: 250px;
-    height: 113px;
-    margin-top: 78px;
   }
 
   .main-p {
@@ -29,7 +26,7 @@
     display: block;
     background: #e8bf6e;
     background: linear-gradient(to bottom, #f4cc7e, #deb461);
-    padding: 15px 0 20px 30px;
+    padding: 8px  28px;
     box-sizing: border-box;
     border-radius: 2px;
     border: 1px solid #caa14e;
@@ -44,12 +41,12 @@
       border: 1px solid #d4d3d2;
       font-size: 14px;
       display: block;
-      min-height: 38px;
+      min-height: 35px;
       width: 250px;
       text-decoration: none;
       border-radius: 2px;
       box-sizing: border-box;
-      padding:10px 10px 10px 97px;
+      padding: 6px 10px  9px 96px;
       position: relative;
       white-space: nowrap;
       overflow: hidden;
@@ -117,7 +114,7 @@
       display: block;
       min-height: 56px;
       width: 250px;
-      padding: 15px 0 20px 30px;
+      padding: 13px  29px  14px  29px;
       box-sizing: border-box;
 
       &.first {
@@ -152,10 +149,16 @@
     &_list {
       margin: 0;
       padding: 0;
+      margin-bottom:  35px;
     }
   .about-me {
-    padding: 37px;
+    padding: 6px  6px  6px  48px;
   }
+
+  .second-info {
+    padding: 22px 41px 22px  41px;
+  }
+
   &_info {
     display: block;
     min-height: 285px;
@@ -173,6 +176,7 @@
     overflow: hidden;
     float: left;
     border: 10px solid #f0efee;
+    margin-top: 18px;
   }
   .my-photo {
     width: 100%;
@@ -186,7 +190,7 @@
     color: #eeedec;
     font-size: 24px;
     font-weight: normal;
-    padding: 12px 5px 12px 40px;
+    padding: 9px 43px;
     border: 1px solid #636363;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -196,6 +200,7 @@
     .content {
       float: right;
       width: 384px;
+
       &_about {
         color: #727070;
         font-size: 16px;
@@ -203,6 +208,7 @@
         float: left;
         margin-right: 10px;
       }
+
       &_item {
         list-style-type: none;
         font-family: OpenSans-Semibold;
@@ -233,18 +239,20 @@
         }
       }
     }
+
     .content_list {
       padding: 0;
       margin: 0;
       line-height: 1.5;
     }
   }
+
   .information-text_p, .education_p {
     position: relative;
     color: #727070;
+    margin: 0;
+    padding: 33px  30px  35px  105px;
     font-size: 14px;
-    margin-left: 95px;
-    margin-bottom: 60px;
     line-height: 1.5;
     @include font-family;
     &:after {
@@ -254,28 +262,23 @@
       background: url("../image/ico/ico-bag.png") no-repeat center center;
       width: 53px;
       height: 55px;
-      top: -5px;
-      left: -91px;
+      top: 28%;
+      left: 3%;
       background-color: #f7f7f7;
       box-shadow: -2px -2px 1px;
       border-radius: 50% 50%;
     }
+
+
     &.line {
-      &:before {
-        position: absolute;
-        content: '';
-        display: block;
-        background: url("../image/line.png") no-repeat 0 0;
-        width: 560px;
-        height: 2px;
-        bottom: -34px;
-        left: -91px;
-      }
+      border-bottom: 2px solid #dbdbda;
     }
   }
+
   .information-text_p:last-child, .education_p:last-child {
     margin-bottom: 0;
   }
+
   .first-img, .second-img, .third-img {
     position: relative;
     &:after {
@@ -284,11 +287,12 @@
       position: absolute;
       width: 53px;
       height: 55px;
-      left: -94px;
-      top: -6px;
+      left: 3%;
+      top: 28%;
 
     }
   }
+
   .first-img {
     &:after {
       background: url("../image/ico/ico-school.png") no-repeat center center;
@@ -297,6 +301,7 @@
       border-radius: 50% 50%;
     }
   }
+
   .second-img {
     &:after {
       background: url("../image/ico/ico-graduate.png") no-repeat center center;
@@ -305,6 +310,7 @@
       border-radius: 50% 50%;
     }
   }
+
   .third-img {
     &:after {
       background: url("../image/ico/ico-file.png") no-repeat center center;
@@ -313,6 +319,7 @@
       border-radius: 50% 50%;
     }
   }
+
   .about-span {
     margin: 0;
   }
@@ -321,4 +328,12 @@
 
     @include font-family;
   }
+}
+
+.about-span {
+  float: left;
+}
+
+.about-span:nth-child(3n) {
+  clear: both;
 }
