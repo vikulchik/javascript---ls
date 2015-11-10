@@ -1,0 +1,75 @@
+.works {
+  display: block;
+  padding: 41px 35px;
+}
+
+.main-works {
+  padding: 0;
+  margin: 0;
+}
+.works_item {
+  width: 165px;
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 32px;
+  border: 2px solid #d0cfcf;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  &:first-child, &:nth-child(4)  {
+    margin-left: 0;
+  }
+}
+
+.works_img {
+  margin-bottom: 7px;
+  border-bottom: 1px solid #bfbfbf;
+  &:hover {
+  }
+}
+.works_name {
+  background-color: #f2f2f2;
+  padding-bottom: 13px;
+  width: 100%;
+  display: block;
+  color: #727070;
+  font-size: 13px;
+}
+
+.works_description {
+  background: #ffffff;
+  margin: 0;
+  color: #727070;
+  font-size: 12px;
+  display: block;
+  padding: 8px 17px;
+}
+
+.add-project {
+  height: 135px;
+  background: #f3f1f1;
+  background: linear-gradient(to bottom, #fafbfb, #e9e8e8);
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url("../image/ico/polaroid.png") no-repeat center center;
+    width: 53px;
+    height: 55px;;
+    top: 27px;
+    left: 56px;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px #cfcfcf;
+    border-radius: 50% 50%;
+  }
+}
+
+.works_add {
+  font-size: 14px;
+  color: #727070;
+  position: absolute;
+  bottom: 7px;
+  left: 28px;
+}

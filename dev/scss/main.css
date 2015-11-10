@@ -1,64 +1,465 @@
-/*
-Error: Invalid CSS after ".": expected "{", was ""
-        on line 1 of _my-works.scss
-        from line 6 of main.scss
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+.clearfix:after {
+  clear: both; }
 
-1: .
+.hide {
+  display: none !important; }
 
-Backtrace:
-_my-works.scss:1
-main.scss:6
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1162:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1098:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1093:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:638:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:632:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:657:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:647:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/engine.rb:403:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/engine.rb:309:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:364:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/bin/scss:13:in `<top (required)>'
-/usr/bin/scss:23:in `load'
-/usr/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \".\": expected \"{\", was \"\"\A         on line 1 of _my-works.scss\A         from line 6 of main.scss\A \A 1: ."; }
+.header {
+  background: url("../image/bg-head.jpg") repeat-x 0 0;
+  border-bottom: 10px solid #ffffff;
+  min-height: 90px; }
+  .header-content {
+    display: block;
+    width: 85%;
+    height: 79px;
+    margin: auto; }
+  .header_logo {
+    float: left;
+    display: block;
+    margin-top: 10px; }
+  .header_nav {
+    float: right;
+    display: inline-block;
+    width: 220px;
+    height: 40px;
+    margin-top: 26px; }
+
+.header_logo-link {
+  display: block; }
+
+.social_link {
+  text-indent: -9999px;
+  display: block;
+  width: 38px;
+  height: 40px; }
+
+.facebook {
+  background: url("../image/ico/ico-facebook.png") no-repeat 0 0; }
+  .facebook:hover {
+    background: url("../image/ico/ico-facebook-active.png") no-repeat 0 0; }
+
+.vk {
+  background: url("../image/ico/ico-vk.png") no-repeat 0 0; }
+  .vk:hover {
+    background: url("../image/ico/ico-vk-active.png") no-repeat 0 0; }
+
+.twitter {
+  background: url("../image/ico/ico-twitter.png") no-repeat 0 0; }
+  .twitter:hover {
+    background: url("../image/ico/ico-twitter-active.png") no-repeat 0 0; }
+
+.github {
+  background: url("../image/ico/ico-girhub.png") no-repeat 0 0; }
+  .github:hover {
+    background: url("../image/ico/ico-github-active.png") no-repeat 0 0; }
+
+.social_list {
+  display: inline-block;
+  margin-left: 15px; }
+  .social_list:first-child {
+    margin-left: 0; }
+
+.main {
+  background: url("../image/wrapper-bg.png") no-repeat 0 0;
+  background-size: cover;
+  padding-top: 33px;
+  padding-bottom: 100px; }
+  .main_information {
+    max-width: 970px;
+    margin: auto; }
+  .main_navigation {
+    display: block;
+    width: 250px;
+    float: left; }
+  .main_contacts {
+    display: block;
+    float: left;
+    width: 250px; }
+  .main .main-p {
+    min-height: 43px;
+    width: 250px;
+    color: #d0982c;
+    font-size: 20px;
+    display: block;
+    background: #e8bf6e;
+    background: linear-gradient(to bottom, #f4cc7e, #deb461);
+    padding: 8px  28px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #caa14e;
+    margin: 0; }
+  .main_mail.link, .main_phone.link, .main_skype.link {
+    background-color: #f7f5f5;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+    color: #727070;
+    border: 1px solid #d4d3d2;
+    font-size: 14px;
+    display: block;
+    min-height: 35px;
+    width: 250px;
+    text-decoration: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 6px 10px  9px 96px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .main_mail.link:after, .main_phone.link:after, .main_skype.link:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url("../image/arrow.png") no-repeat 0 0;
+      width: 10px;
+      height: 38px;
+      top: 0;
+      left: 49px; }
+    .main_mail.link:hover, .main_phone.link:hover, .main_skype.link:hover {
+      background: linear-gradient(to bottom, #ffffff, #f2e7d0);
+      text-decoration: underline; }
+  .main_mail, .main_phone, .main_skype {
+    position: relative; }
+    .main_mail:before, .main_phone:before, .main_skype:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 19px; }
+  .main_mail:before {
+    background: url("../image/ico/ico-mail.png") no-repeat 0 0;
+    width: 14px;
+    height: 10px;
+    top: 13px; }
+  .main_phone:before {
+    background: url("../image/ico/ico-phone.png") no-repeat 0 0;
+    width: 14px;
+    height: 19px;
+    top: 9px; }
+  .main_skype:before {
+    background: url("../image/ico/ico-skype.png") no-repeat 0 0;
+    width: 19px;
+    height: 19px;
+    top: 9px; }
+  .main_item, .main .contacts_li {
+    list-style-type: none; }
+  .main_link {
+    text-decoration: none;
+    border-radius: 2px;
+    color: #727070;
+    font-size: 20px;
+    display: block;
+    min-height: 56px;
+    width: 250px;
+    padding: 13px  29px  14px  29px;
+    box-sizing: border-box; }
+    .main_link.first {
+      background-color: #669f88;
+      background: linear-gradient(to bottom, #7de8cd, #3fb79a);
+      color: #1e7465;
+      border: 1px solid #88d1b3; }
+    .main_link.second, .main_link.third {
+      background-color: #f7f5f5;
+      background: linear-gradient(to bottom, #f9f9fa, #e8e7e8);
+      color: #727070;
+      border: 1px solid #c0c0c0; }
+      .main_link.second:hover, .main_link.third:hover {
+        background-color: #669f88;
+        background: linear-gradient(to bottom, #7de8cd, #3fb79a);
+        color: #467366;
+        border: 1px solid #88d1b3; }
+    .main_link.third:hover {
+      background-color: #8accae;
+      background: linear-gradient(to bottom, #a5e7cb, #74b797);
+      color: #467366;
+      border: 1px solid #88d1b3; }
+  .main_list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px; }
+  .main .about-me {
+    padding: 6px  6px  6px  48px; }
+  .main .second-info {
+    padding: 22px 41px 22px  41px; }
+  .main_info {
+    display: block;
+    min-height: 285px;
+    width: 650px;
+    border-radius: 5px;
+    border: 1px solid #c5c5c5;
+    background-color: #f6f5f5;
+    float: right;
+    margin-bottom: 35px; }
+  .main .avatar {
+    width: 142px;
+    height: 142px;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    float: left;
+    border: 10px solid #f0efee;
+    margin-top: 18px; }
+  .main .my-photo {
+    width: 100%; }
+  .main_title {
+    min-height: 57px;
+    background-color: #8c8989;
+    background: linear-gradient(to bottom, #a9a7a7, #7c7979);
+    display: block;
+    margin: 0;
+    color: #eeedec;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 9px 43px;
+    border: 1px solid #636363;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box; }
+  .main_info .content {
+    float: right;
+    width: 384px; }
+    .main_info .content_about {
+      color: #727070;
+      font-size: 16px;
+      font-family: OpenSans-Semibold;
+      float: left;
+      margin-right: 10px; }
+    .main_info .content_item {
+      list-style-type: none;
+      font-family: OpenSans-Semibold;
+      color: #1e7465;
+      font-size: 9px;
+      text-transform: uppercase;
+      display: inline-block;
+      background-color: #faf8f8;
+      background: linear-gradient(to bottom, #f9fafa, #e0e0e0);
+      border: 1px solid #d7d7d7;
+      margin-bottom: 10px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 2px 7px;
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+      margin-left: 10px;
+      position: relative; }
+      .main_info .content_item:after {
+        position: absolute;
+        content: '';
+        display: block;
+        background: url("../image/ico/img-block.png") no-repeat 0 0;
+        width: 12px;
+        height: 20px;
+        top: -2px;
+        left: -11px; }
+  .main_info .content_list {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5; }
+  .main .information-text_p, .main .education_p {
+    position: relative;
+    color: #727070;
+    margin: 0;
+    padding: 33px  30px  35px  105px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "OpenSans-Regular"; }
+    .main .information-text_p:after, .main .education_p:after {
+      position: absolute;
+      display: block;
+      content: '';
+      background: url("../image/ico/ico-bag.png") no-repeat center center;
+      width: 53px;
+      height: 55px;
+      top: 28%;
+      left: 3%;
+      background-color: #f7f7f7;
+      box-shadow: -2px -2px 1px;
+      border-radius: 50% 50%; }
+    .main .information-text_p.line, .main .education_p.line {
+      border-bottom: 2px solid #dbdbda; }
+  .main .information-text_p:last-child, .main .education_p:last-child {
+    margin-bottom: 0; }
+  .main .first-img, .main .second-img, .main .third-img {
+    position: relative; }
+    .main .first-img:after, .main .second-img:after, .main .third-img:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 53px;
+      height: 55px;
+      left: 3%;
+      top: 28%; }
+  .main .first-img:after {
+    background: url("../image/ico/ico-school.png") no-repeat center center;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px;
+    border-radius: 50% 50%; }
+  .main .second-img:after {
+    background: url("../image/ico/ico-graduate.png") no-repeat center center;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px;
+    border-radius: 50% 50%; }
+  .main .third-img:after {
+    background: url("../image/ico/ico-file.png") no-repeat center center;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px;
+    border-radius: 50% 50%; }
+  .main .about-span {
+    margin: 0; }
+  .main_link, .main_title, .main-p, .main .about-span, .main .information-text_p, .main .link {
+    font-family: "OpenSans-Regular"; }
+
+.about-span {
+  float: left; }
+
+.about-span:nth-child(3n) {
+  clear: both; }
+
+.works {
+  display: block;
+  padding: 41px 35px; }
+
+.main-works {
+  padding: 0;
+  margin: 0; }
+
+.works_item {
+  width: 165px;
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 32px;
+  border: 2px solid #d0cfcf;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px; }
+  .works_item:first-child, .works_item:nth-child(4) {
+    margin-left: 0; }
+
+.works_img {
+  margin-bottom: 7px;
+  border-bottom: 1px solid #bfbfbf; }
+
+.works_name {
+  background-color: #f2f2f2;
+  padding-bottom: 13px;
+  width: 100%;
+  display: block;
+  color: #727070;
+  font-size: 13px; }
+
+.works_description {
+  background: #ffffff;
+  margin: 0;
+  color: #727070;
+  font-size: 12px;
+  display: block;
+  padding: 8px 17px; }
+
+.add-project {
+  height: 135px;
+  background: #f3f1f1;
+  background: linear-gradient(to bottom, #fafbfb, #e9e8e8);
+  position: relative; }
+  .add-project:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url("../image/ico/polaroid.png") no-repeat center center;
+    width: 53px;
+    height: 55px;
+    top: 27px;
+    left: 56px;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px #cfcfcf;
+    border-radius: 50% 50%; }
+
+.works_add {
+  font-size: 14px;
+  color: #727070;
+  position: absolute;
+  bottom: 7px;
+  left: 28px; }
+
+.footer {
+  background-color: #fdfdfd;
+  min-height: 61px;
+  padding: 27px 0 27px 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+  .footer_button, .footer_copyright {
+    margin: 0; }
+  .footer_copyright {
+    text-align: center;
+    color: #727070;
+    font-size: 12px;
+    font-family: OpenSans-Light;
+    display: inline-block;
+    margin-left: 50px; }
+  .footer .button-login {
+    display: inline-block; }
+  .footer_button {
+    position: relative;
+    color: #9c9c9c;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    font-family: OpenSans-Bold; }
+    .footer_button:after {
+      display: block;
+      content: '';
+      background: url("../image/locked.png") no-repeat 0 0;
+      width: 16px;
+      height: 19px;
+      top: -2px;
+      position: absolute;
+      left: -32px; }
+
+.wrapper {
+  font-family: "Arial", sans-serif;
+  max-width: 1920px; }
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(../fonts/opensans-bold-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: url(../fonts/opensans-bolditalic-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url(../fonts/opensans-extrabold-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-ExtraBoldItalic";
+  src: url(../fonts/opensans-extrabolditalic-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-talic";
+  src: url(../fonts/opensans-italic-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url(../fonts/opensans-light-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url(../fonts/opensans-lightitalic-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../fonts/opensans-regular-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url(../fonts/opensans-semibold-webfont.ttf); }
+@font-face {
+  font-family: "OpenSans-SemiboldItalic";
+  src: url(../fonts/opensans-semibolditalic-webfont.ttf); }
+body {
+  margin: 0;
+  height: 100%;
+  min-width: 100%; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+/*# sourceMappingURL=main.css.map */
