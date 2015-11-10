@@ -4,7 +4,10 @@ html
     body
         .wrapper
             include _header.jade
-            include _section.jade
+            section.main
+                section.main_information.clearfix
+                    include _aside
+                    include _section.jade
 
             include _footer.jade
         include _scripts.jade
