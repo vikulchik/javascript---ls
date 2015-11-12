@@ -35,6 +35,9 @@
   display: block;
   width: 38px;
   height: 40px; }
+  .social_link:hover {
+    transition: 0.2s;
+    transform: rotate(-360deg); }
 
 .facebook {
   background: url("../image/ico/ico-facebook.png") no-repeat 0 0; }
@@ -153,26 +156,20 @@
     min-height: 56px;
     width: 250px;
     padding: 13px  29px  14px  29px;
-    box-sizing: border-box; }
-    .main_link.first {
+    box-sizing: border-box;
+    border: 1px solid #c3c3c3;
+    background: linear-gradient(#f9f9fa, #e8e7e8); }
+    .main_link:hover {
+      background: linear-gradient(#e2e0e0, #bebdbd); }
+    .main_link:active {
+      border: 1px solid #636363;
+      color: #eeedec;
+      text-shadow: 0 1px 1px #000;
+      background: linear-gradient(#a8a7a7, #7c7979); }
+    .main_link.active {
       background-color: #669f88;
       background: linear-gradient(to bottom, #7de8cd, #3fb79a);
       color: #1e7465;
-      border: 1px solid #88d1b3; }
-    .main_link.second, .main_link.third {
-      background-color: #f7f5f5;
-      background: linear-gradient(to bottom, #f9f9fa, #e8e7e8);
-      color: #727070;
-      border: 1px solid #c0c0c0; }
-      .main_link.second:hover, .main_link.third:hover {
-        background-color: #669f88;
-        background: linear-gradient(to bottom, #7de8cd, #3fb79a);
-        color: #467366;
-        border: 1px solid #88d1b3; }
-    .main_link.third:hover {
-      background-color: #8accae;
-      background: linear-gradient(to bottom, #a5e7cb, #74b797);
-      color: #467366;
       border: 1px solid #88d1b3; }
   .main_list {
     margin: 0;
@@ -198,7 +195,8 @@
     overflow: hidden;
     float: left;
     border: 10px solid #f0efee;
-    margin-top: 18px; }
+    margin-top: 18px;
+    box-shadow: 0 0 1px black; }
   .main .my-photo {
     width: 100%; }
   .main_title {
@@ -220,10 +218,12 @@
     width: 384px; }
     .main_info .content_about {
       color: #727070;
-      font-size: 16px;
+      font-size: 14px;
       font-family: OpenSans-Semibold;
       float: left;
       margin-right: 10px; }
+    .main_info .content .about-list {
+      line-height: 2; }
     .main_info .content_item {
       list-style-type: none;
       font-family: OpenSans-Semibold;
@@ -251,6 +251,8 @@
         height: 20px;
         top: -2px;
         left: -11px; }
+  .main_info .content_about:nth-child(3) {
+    clear: both; }
   .main_info .content_list {
     padding: 0;
     margin: 0;
@@ -305,7 +307,8 @@
     box-shadow: -2px -2px 1px;
     border-radius: 50% 50%; }
   .main .about-span {
-    margin: 0; }
+    margin: 0;
+    font-size: 14px; }
   .main_link, .main_title, .main-p, .main .about-span, .main .information-text_p, .main .link {
     font-family: "OpenSans-Regular"; }
 
@@ -329,24 +332,28 @@
   display: inline-block;
   vertical-align: top;
   margin-left: 32px;
-  border: 2px solid #d0cfcf;
-  border-radius: 5px;
+  border: 1px solid #d0cfcf;
+  border-radius: 7px;
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  position: relative; }
   .works_item:first-child, .works_item:nth-child(4) {
     margin-left: 0; }
 
 .works_img {
-  margin-bottom: 7px;
-  border-bottom: 1px solid #bfbfbf; }
+  display: block;
+  width: 100%;
+  position: relative; }
 
 .works_name {
   background-color: #f2f2f2;
-  padding-bottom: 13px;
-  width: 100%;
+  padding: 8px 5px;
   display: block;
   color: #727070;
-  font-size: 13px; }
+  font-size: 13px;
+  border-top: 1px solid #bfbfbf;
+  text-decoration: none; }
 
 .works_description {
   background: #ffffff;
@@ -373,13 +380,31 @@
     background-color: #f7f7f7;
     box-shadow: -2px -2px 1px #cfcfcf;
     border-radius: 50% 50%; }
+  .add-project:hover {
+    background: #d7d5d5;
+    background: linear-gradient(to bottom, #e5e4e4, #bebdbd);
+    border: 1px solid #b6b6b6; }
+    .add-project:hover:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url("../image/ico/polaroid.png") no-repeat center center;
+      width: 53px;
+      height: 55px;
+      top: 27px;
+      left: 56px;
+      background-color: #d7d7d7;
+      box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.8);
+      border-radius: 50% 50%; }
 
 .works_add {
   font-size: 14px;
   color: #727070;
-  position: absolute;
-  bottom: 7px;
-  left: 28px; }
+  text-decoration: none;
+  display: block;
+  padding: 96px 27px; }
+  .works_add:hover {
+    color: #727070; }
 
 .footer {
   background-color: #fdfdfd;

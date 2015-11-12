@@ -116,34 +116,25 @@
       width: 250px;
       padding: 13px  29px  14px  29px;
       box-sizing: border-box;
+      border: 1px solid #c3c3c3;
+      background: linear-gradient(#f9f9fa,#e8e7e8);
 
-      &.first {
+      &:hover {
+        background: linear-gradient(#e2e0e0,#bebdbd);
+      }
+
+      &:active {
+        border: 1px solid #636363;
+        color: #eeedec;
+        text-shadow: 0 1px 1px #000;
+        background: linear-gradient(#a8a7a7,#7c7979);
+      }
+
+      &.active {
         background-color: #669f88;
         background: linear-gradient(to bottom, #7de8cd, #3fb79a);
         color: #1e7465 ;
         border: 1px solid #88d1b3;
-      }
-
-      &.second, &.third {
-        background-color: #f7f5f5;
-        background: linear-gradient(to bottom, #f9f9fa, #e8e7e8);
-        color: #727070;
-        border: 1px solid #c0c0c0;
-        &:hover {
-          background-color: #669f88;
-          background: linear-gradient(to bottom, #7de8cd, #3fb79a);
-          color: #467366;
-          border: 1px solid #88d1b3;
-        }
-      }
-
-      &.third {
-        &:hover {
-          background-color: #8accae;
-          background: linear-gradient(to bottom, #a5e7cb, #74b797);
-          color: #467366;
-          border: 1px solid #88d1b3;
-        }
       }
     }
     &_list {
@@ -177,6 +168,7 @@
     float: left;
     border: 10px solid #f0efee;
     margin-top: 18px;
+    box-shadow: 0 0 1px rgba(0,0,0,1);
   }
   .my-photo {
     width: 100%;
@@ -203,10 +195,14 @@
 
       &_about {
         color: #727070;
-        font-size: 16px;
+        font-size: 14px;
         font-family: OpenSans-Semibold;
         float: left;
         margin-right: 10px;
+      }
+
+      .about-list {
+        line-height: 2;
       }
 
       &_item {
@@ -238,6 +234,10 @@
           left: -11px;
         }
       }
+    }
+
+    .content_about:nth-child(3) {
+      clear: both;
     }
 
     .content_list {
@@ -322,6 +322,7 @@
 
   .about-span {
     margin: 0;
+    font-size: 14px;
   }
 
   &_link, &_title, &-p, .about-span, .information-text_p, .link {
@@ -334,6 +335,9 @@
   float: left;
 }
 
-.about-span:nth-child(3n) {
+.about-span:nth-child(3n), {
   clear: both;
 }
+
+
+
