@@ -10,6 +10,12 @@ html
       .wrapper
          section.main_pop-up
             p.authorization Авторизируйтесь
+            .pop-up
+               form.data
+                  input(type="email" name="email" required placeholder="Введите Email").email
+                  input(type="password" name="psw" placeholder="Введите пароль").password
+                  input(type="checkbox" id="checkbox").checkbox
+               p.rename Запомнить меня
          include _footer.jade
       include _scripts.jade
 
