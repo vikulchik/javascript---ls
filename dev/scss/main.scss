@@ -4,8 +4,14 @@
 @import "header";
 @import "section";
 @import "my-works";
+@import "pop-up";
 
 @import "footer";
+
+body {
+  background: url("../image/wrapper-bg.png") no-repeat 0 0;
+  background-size: cover;
+}
 
 .wrapper {
   font-family: "Arial", sans-serif;

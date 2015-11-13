@@ -1,0 +1,18 @@
+body {
+  background: url("../image/wrapper-bg.png") no-repeat 0 0;
+  background-size: cover;
+  height: 100%;
+}
+
+.main_pop-up {
+  display: block;
+  position: absolute;
+  bottom:  50%;
+  left: 50%;
+  width: 333px;
+}
+
+.authorization {
+  font-size: 12px;
+  color: #727070;
+}

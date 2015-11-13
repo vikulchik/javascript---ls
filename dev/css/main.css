@@ -86,8 +86,6 @@
 }
 
 .main {
-  background: url("../image/wrapper-bg.png") no-repeat 0 0;
-  background-size: cover;
   padding-top: 33px;
   padding-bottom: 100px;
 }
@@ -484,6 +482,25 @@
   color: #727070;
 }
 
+body {
+  background: url("../image/wrapper-bg.png") no-repeat 0 0;
+  background-size: cover;
+  height: 100%;
+}
+
+.main_pop-up {
+  display: block;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 333px;
+}
+
+.authorization {
+  font-size: 12px;
+  color: #727070;
+}
+
 .footer {
   background-color: #fdfdfd;
   min-height: 61px;
@@ -526,6 +543,21 @@
   top: -2px;
   position: absolute;
   left: -32px;
+}
+.footer_button:hover:after {
+  background: url("../image/unlocked.png") no-repeat 0 0;
+  display: block;
+  content: '';
+  width: 21px;
+  height: 19px;
+  top: -2px;
+  position: absolute;
+  left: -32px;
+}
+
+body {
+  background: url("../image/wrapper-bg.png") no-repeat 0 0;
+  background-size: cover;
 }
 
 .wrapper {

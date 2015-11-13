@@ -39,5 +39,17 @@
       position: absolute;
       left: -32px;
     }
+    &:hover {
+      &:after {
+        background: url("../image/unlocked.png") no-repeat 0 0;
+        display: block;
+        content: '';
+        width: 21px;
+        height: 19px;
+        top: -2px;
+        position: absolute;
+        left: -32px;
+      }
+    }
   }
 }
